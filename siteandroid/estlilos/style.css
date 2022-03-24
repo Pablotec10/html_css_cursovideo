@@ -1,0 +1,262 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* importar fonte do google usar @import url(); */
+@font-face {
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/* @font-face{ font-family: 'Android'; src: url('/fontes/idroid.otf')format('opentype'); serve
+    para inserir fonte baixada no computador  */
+
+:root {
+    --cor0:#c5ebd6;
+    --cor1:darkgreen;
+    --cor3: #2fa866; 
+    --cor5: #063d1e;
+    --cor4: #1a5c37;
+
+  
+
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android:'Android', cursive;
+    
+}
+ /* funcao q modifica todo o html5 */
+*{
+   
+    margin:0px;
+    padding:0px;
+}
+body{
+    /* background-color: #c5ebd6; */
+   /* background-color: var(--cor0); */
+   background-color: var(--cor0);
+   font-family: var(--fonte-padrao);
+}
+
+main h1 {
+
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+       font-style: normal;
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor0),transparent);
+}
+/*    
+    h1 {
+        font-family: 'idroid';
+        src: url('fontes/idroid.otf');
+        font-weight: normal;
+       font-style: normal;
+       color: darkgreen;
+    } */
+
+    /* .versao{
+     background-color: #84E1AD;
+       
+    } */
+main p{
+    margin: 15px 0px;
+   text-align: justify;
+   font-family: Arial, Helvetica, sans-serif;
+   text-indent: 30px;
+   /* recuar o paragrrafo */
+   line-height: 1.5em;
+   /* espacamento entre linhas */
+   font-size: 1em;
+}
+div.video{
+   text-align: center;
+   background-color: var(--cor4);
+   padding: 20px;
+   margin: 0px -20px 30px -20px;
+   padding-bottom: 59%;
+   position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width: 90%;
+    height:90%;
+
+
+}
+
+main {
+   
+  
+    background-color: white;
+    /* margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 0px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 9px; */
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; 
+    /* margin automatica pra quando ver em tela cheia 
+    ela não crescer, ai ficou centralizada  */
+    margin-bottom: 30px;
+    /* margin em baixo pra nao ficar colada
+    com o rodape */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+
+}
+main img{
+    width: 100%; 
+    /* faz com q as imagens se expremam e 
+    se adaptem  */
+}
+main img.pequena{
+    /* width: 50%; */
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    /* display block pra centralizar a imagem e o margin auto também */
+}
+header {
+    /* background-color: var(--cor4); */
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    /* altura minima usa min-height */
+    text-align: center;
+    padding-top: 40px;
+   
+    /* padding top foi para ajeitar 
+    a largura pra nao tocar */
+    /* padding-top: 5px;
+    padding-left: 11px;
+    padding-right: 33px;
+    margin-left: -8px;
+    margin-right: -11px;
+    margin-top: -9px; */
+}
+/* 
+section{
+    background-color: rgb(11, 59, 26);
+    padding: 10px;
+    margin: 10px;
+} */
+
+header > h1{
+    color: white;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* text-align: center; */
+    font-size: 3em;
+  
+    /* defini a margem na parte inferior de um elemento
+    ou seja distanciar  */
+
+    text-shadow: -3px 1px 7px #3c3a3a;
+}
+header >p {
+    /* font-size: 16px;
+    text-align: center; */
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    max-width: 600px;
+    font-family: var(--fonte-padrao);
+    /* max-width serve para botar a largura
+    maxima de 500 o texto pra nao quebrar a pagina */
+    color: white;
+    /* margin-top: -7px; */
+    text-shadow: -2px -1px 7px black;
+    margin: auto;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+nav > a{
+  
+    color: white;
+    text-decoration: none; 
+    /* tirar sublinhado */
+    /* display: inline; */
+    margin-right: 20px;
+    /* padding-left: 20px; */
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    /* margin-left: -14px;
+    margin-right: -33px;
+    margin-top: -6px; */
+    box-shadow: 0px 7px 7px rgba(0,0,0,0.418);
+}
+nav > a:hover{
+   background-color: var(--cor3);
+   /* margin: 30px, 40px 10px; */
+   color: var(--cor5);
+  
+  
+}
+
+
+aside{
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside >ul{
+    list-style-type:'\2714\00a0';
+    list-style-position: inside;
+    /* colocar lista dentro
+    e outside fora */
+    columns: 2;
+    /* dividir a lista em 
+    duas colunas */
+}
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 7px;
+    /* margin: -16px; */
+    position: relative;
+
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+/* .onde-estamos{
+    width: 30%; float: right; padding: 10px 20px; background-color: #84E1AD; border-radius: 5px;
+} 
+
+.sobre{
+    width: 70%; float: left; padding: 0 20px 20px 0;
+} */
